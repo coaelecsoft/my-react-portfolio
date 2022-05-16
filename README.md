@@ -1,5 +1,6 @@
 # my-react-portfolio
 This project is my presentation of my skills with React.js 
+
 keyWord: Frontend, jS, scss, oop, React.js, cli, npm, visaulStudio,
 
 
@@ -12,6 +13,10 @@ git clone https://github.com/coaelecsoft/my-react-portfolio
 
 Type cd my-react-portfolio and press enter to position to the root of project.
 
+After every change I can change on github. 
+
+I am not working in team but this is usefull if I accedently delete file, files or complate project.
+
 ## 2. Create React app
 
 I also use GitBash for creating my react app. After position to root create react app with next command.
@@ -20,6 +25,12 @@ npm create-react-app .
 Run app with npm start. App is runing on http://localhost:3000
 
 ## 3. Open React app with visual studio
+
+Delete all don't needed files.
+
+Install React extension.
+npm install react-router-dom
+
 
 
 

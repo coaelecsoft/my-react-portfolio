@@ -1,0 +1,124 @@
+$distance: 5px;
+$menu-btn-width: 5rem;
+$menu-btn-radius: .01em;
+$color-menu-one: #0063B1;
+
+@mixin flex-responsive {
+    display: flex;
+    flex-direction: column;
+    gap:$distance;
+    padding:0;
+    @media all and (min-width:696px) {
+        flex-direction:row;
+    }
+    }
+
+
+.menu-component {
+    background: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    font-size: 1.3rem;
+    padding:5px;
+
+    > a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: $menu-btn-width;
+        height: $menu-btn-width;
+        color: #fff;
+        background: $color-menu-one;
+        border-radius: $menu-btn-radius;
+        border: 1px solid white;
+        box-shadow: 0px -3px 9px 2px silver;
+
+
+        > svg {
+            width: 80%;
+            height: 80%;
+        }
+    }
+
+    > ul {
+        @include flex-responsive;
+        margin-top: -100%;
+        margin-left: -100%;
+        transform: rotateZ(-35deg);
+        overflow: hidden;
+        transition: all .5s;
+
+        > li {
+            list-style: none;
+            width: 20%;
+            height: 65px;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+            align-self: center;
+            transform: rotateZ(-63deg);
+            transition: all .5s 1s;
+
+            > a {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-decoration: none;
+                color: #0063B1;
+                border-bottom: 1px solid #0063B1;
+                transition: all 1s;
+
+                &:hover {
+                    transition: all 1s;
+                    color: white;
+                    background: #0063B1;
+                    border:solid 1px white;
+                }
+            }
+        }
+    }
+
+    &.opened {
+        > a {
+            transition: all 1s;
+            right: 0;
+        }
+
+        > ul {
+            margin-top: 0;
+            margin-left: 0;
+            transform: rotateZ(0deg);
+            transition: all .5s;
+
+            > li {
+                transform:rotateZ(0);
+                width:100%;
+                transition: all 1s ease-out;
+            }
+        }
+    }
+}
+
+    @media all and (min-width:696px) {
+        .menu-component {
+            > a {
+                display: none;
+            }
+
+            > ul {
+                margin-top: 0;
+                margin-left: 0;
+                transform: rotateZ(0deg);
+                > li{
+                    transform:rotateZ(0deg);
+                }
+            }
+        }
+    }
