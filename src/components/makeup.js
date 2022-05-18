@@ -22,25 +22,24 @@ function MakeUp() {
   return (
       <>
       
-          <div className="contactform">
-
-              <select  onChange={(event) => {
-                  setBrand(event.target.value)
-              }} >
-                  <option value={' '}>All</option>
-                  {brands.map(item =>
-                      <option value={item.brand }> {item.brand}</option>
-                  )}
-                  
-                  </select>
-              <button onClick={fetchData}>Get Brand</button>
-                
-             
-              
-             
-          </div>
+         
           {base.length > 0 && (
               <ul className="flex-articles">
+                  <li className="first-list-item">
+
+                      <select onChange={(event) => {
+                          setBrand(event.target.value)
+                      }} >
+                          <option value={' '}>All</option>
+                          {brands.map(item =>
+                              <option value={item.brand}> {item.brand}</option>
+                          )}
+
+                      </select>
+                      <button className="btn" onClick={fetchData}>Get Brand</button>
+
+                  </li>
+
                   {base.map(item => (
                       <li>
                           <h2>{item.name}</h2>
