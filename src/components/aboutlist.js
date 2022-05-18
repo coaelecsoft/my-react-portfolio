@@ -6,7 +6,10 @@ function AboutList() {
                 <h2>Basic About Project</h2>  
                 <ul >
                     <li>
-
+                        <h2>Tools</h2>
+                        <p>
+                            Tools and services used in this example: github, git bash, node.js, npm, react.js, visual studio, sass, api
+                        </p>
                     </li>
                     <li>
                         <h2>Layout</h2>
@@ -23,8 +26,11 @@ function AboutList() {
                             That is very important for performace of web-app.
                         </p>
                     </li>
+                    <li>
+                    </li>
                 </ul>
             </section>
+            
         </>
         
         );
