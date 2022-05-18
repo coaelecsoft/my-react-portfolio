@@ -3,7 +3,7 @@ import brands from './makeup.json';
 import categories from './categories.json';
 function MakeUp() {
     const [base, setBase] = useState([]);
-    const [brand, setBrand] = useState('');
+    const [brand, setBrand] = useState('nyx');
    const [category, setCategory] = useState('');
     const baseurlapi = "https://makeup-api.herokuapp.com/api/v1/products.json?brand=";
     const searchebybrand = baseurlapi + brand;
