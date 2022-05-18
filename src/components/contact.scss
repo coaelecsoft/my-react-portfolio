@@ -1,0 +1,23 @@
+
+.contact-page{
+    padding-top:85px;
+    display:flex;
+    flex-direction:column;
+}
+
+@media all and (min-width:777px){
+    .contact-page {
+        flex-direction: row;
+        > *{
+            flex:0 0 50%;
+        }
+        > header {
+            order: 1;
+            height:100vh;
+        }
+
+        > .contactform{
+            order:2;
+        }
+    }
+}

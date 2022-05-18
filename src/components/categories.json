@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "category": "lipstick"
+  },
+  {
+    "id": 2,
+    "category": "powder"
+  },
+  {
+    "id": 3,
+    "category": "pencil"
+  },
+  {
+    "id": 4,
+    "category": "liquid"
+  },
+  {
+    "id": 5,
+    "category": "lip_gloss"
+  }
+]

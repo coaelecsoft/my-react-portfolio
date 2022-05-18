@@ -25,7 +25,7 @@ function Menu() {
                     <Link to="/about">About</Link>
                 </li>
                 <li>
-                    <Link to="/blog">Blog</Link>
+                    <Link to="/blog">Make Up</Link>
                 </li>
                 <li>
                     <Link to="/galery">Galery</Link>
@@ -33,6 +33,7 @@ function Menu() {
                 <li>
                     <Link to="/contact">Contact</Link>
                 </li>
+               
             </ul>
             </nav>
         );

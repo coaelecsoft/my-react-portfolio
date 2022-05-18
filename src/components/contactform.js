@@ -29,6 +29,7 @@ function Contactform() {
                     setMessage(event.target.value)
                 }} />
                 <button onClick={sendMessage}>Send message</button>
+                <p id="question">Sended Message</p>
             </section>
         </>
     );

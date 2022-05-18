@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "Bela and Arsa",
+    "description": "Bela and Arsa",
+    "picture": "./arsabela1.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Misa and Sneza",
+    "description": "Misa and Sneza",
+    "picture": "./misasneza.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Linda and Lily",
+    "description": "Linda and Lily",
+    "picture": "./lindalily.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Buty and friends",
+    "description": "Buty and friends",
+    "picture": "./buty.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Mily",
+    "description": "Mily",
+    "picture": "./mily.jpg"
+  }
+]
