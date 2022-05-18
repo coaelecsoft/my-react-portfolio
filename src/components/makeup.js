@@ -22,20 +22,21 @@ function MakeUp() {
   return (
       <>
       
-          <div>
-              
-              <select onChange={(event) => {
+          <div className="contactform">
+
+              <select  onChange={(event) => {
                   setBrand(event.target.value)
               }} >
                   <option value={' '}>All</option>
                   {brands.map(item =>
                       <option value={item.brand }> {item.brand}</option>
                   )}
-                  </select>
                   
+                  </select>
+              <button onClick={fetchData}>Get Brand</button>
                 
              
-              <button onClick={fetchData}>Get Brand</button>
+              
              
           </div>
           {base.length > 0 && (
