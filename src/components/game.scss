@@ -130,7 +130,7 @@ $main-color: #0063B1;
     }
 
     > .open-mode {
-        color: $main-color;
+        color: rgba($main-color, .5);
         pointer-events: none;
 
         > svg {
@@ -154,9 +154,7 @@ $main-color: #0063B1;
     }
 
     > *:hover {
-        background-color:$main-color;
-       
-        
+        background-color: $main-color;
         transition: all .21s;
     }
 }
