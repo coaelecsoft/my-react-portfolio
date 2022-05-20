@@ -151,6 +151,7 @@ function MemGame() {
 
     return (
         <>
+            
             <header className="game-header">
                
                 <p>Score: <span id="score">0</span> </p>
@@ -292,7 +293,7 @@ function MemGame() {
             <footer className="game-footer">
                 <button onClick={startGame}>Start Game</button>
             </footer>
-
+           
         </>
         );
 }

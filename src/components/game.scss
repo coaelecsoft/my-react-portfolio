@@ -7,6 +7,59 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/style.scss to edit thi
     Author     : Alex
 */
 $main-color: #0063B1;
+.game-frame {
+   border: $main-color solid 1px;
+    border-radius:1em;
+    min-width: 320px;
+    max-width:500px;
+    padding:13px;
+    margin:auto;
+}
+.game-mask {
+    box-shadow: 1px 2px 13px 3px $main-color;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 13000;
+    background: rgba($main-color, .7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 20px;
+    width:340px;
+    height:340px;
+    margin:auto;
+    visibility:hidden;
+    > p {
+        padding: 13px;
+        border: white solid 1px;
+        width: 50%;
+        display: flex;
+        background-color: white;
+        border-radius:1rem;
+
+        color: $main-color;
+        > span:first-child {
+            width: 20%;
+        }
+
+        > span:last-child {
+            text-align: right;
+            width: 80%;
+        }
+    }
+
+    > button {
+        padding: 13px;
+        background-color: white;
+        color: $main-color;
+        width: 50%;
+    }
+}
 .game-header {
     display: flex;
     width: 320px;
@@ -44,6 +97,7 @@ $main-color: #0063B1;
         background-color: $main-color;
         color: white;
         width: 100%;
+        border-radius:1em;
     }
 }
 
@@ -59,6 +113,8 @@ $main-color: #0063B1;
     > * {
         color: transparent;
         border: 1px solid $main-color;
+        border-radius: 1em;
+        box-shadow: rgba($main-color, .6) 1px 1px 1px 1px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -92,13 +148,16 @@ $main-color: #0063B1;
         border: solid 1px transparent;
 
         > svg {
-            transform: rotateX(0deg) rotateY(0deg);
+            transform: rotateX(-360deg) rotateY(-720deg);
             transition: 1s all;
         }
     }
 
     > *:hover {
-        background: lightcyan;
+        background-color:$main-color;
+       
+        
+        transition: all .21s;
     }
 }
 
