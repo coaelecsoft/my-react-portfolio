@@ -28,7 +28,8 @@ function MakeUp() {
                   <li className="first-list-item">
 
                       <select onChange={(event) => {
-                          setBrand(event.target.value)
+                          setBrand(event.target.value);
+                          fetchData();
                       }} >
                           <option value={' '}>All</option>
                           {brands.map(item =>

@@ -6,6 +6,7 @@ function MemGame() {
 
     const orderfields = randomArrayShuffle(fields);
 
+    
     //const [firstfield, setFirstfield] = useState('')
     //const [secondfield, setSecondfield] = useState('')
     let score = 0;
@@ -54,7 +55,7 @@ function MemGame() {
                         score += 13000000;
                     }
                     
-                    if (playfields < 8) {
+                    if (playfields < 16) {
                         playfields += 2;
                         findpair = playfields / 2;
                         score += 1000;
@@ -150,14 +151,14 @@ function MemGame() {
 
     return (
         <>
-            <div style={{ margin: 'auto', textAlign: 'center'}}>
-            <h2>Memory game with js and React</h2>
-            <p id="score" >score: </p>
-            <p id="level" >level:</p>
-            <p id="try" >try:</p>
+            <header className="game-header">
+               
+                <p>Score: <span id="score">0</span> </p>
+                <p>Level: <span id="level" >0</span></p>
+                <p>Try: <span id="try">0</span></p>
            
-                <button onClick={startGame}>Start Game</button>
-            </div>
+                
+            </header>
             <ul className="game-container" id="gc">
                 <li onClick={(event) => {
                     setField(1, 1)
@@ -288,6 +289,9 @@ function MemGame() {
                 </li>
 
             </ul>
+            <footer className="game-footer">
+                <button onClick={startGame}>Start Game</button>
+            </footer>
 
         </>
         );
