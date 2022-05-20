@@ -31,6 +31,9 @@ function Menu() {
                     <Link to="/galery">Galery</Link>
                 </li>
                 <li>
+                    <Link to="/game">Game</Link>
+                </li>
+                <li>
                     <Link to="/contact">Contact</Link>
                 </li>
                

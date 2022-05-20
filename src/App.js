@@ -12,6 +12,7 @@ import Home from "./pages/home";
 import Map from "./pages/map";
 import "./AppStyle.scss";
 import MakeUp from "./components/makeup";
+import Game from "./pages/game";
 function App() {
     return (
         <BrowserRouter>
@@ -23,6 +24,7 @@ function App() {
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/map" element={<Map />} />
                 <Route path="/makeup" element={<MakeUp />} />
+                <Route path="/game" element={<Game /> } />
             </Routes>
         </BrowserRouter>  
   );

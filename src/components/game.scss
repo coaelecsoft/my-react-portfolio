@@ -1,0 +1,83 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/style.scss to edit this template
+*/
+/*
+    Created on : Jan 26, 2022, 4:51:11 AM
+    Author     : Alex
+*/
+.game-container {
+    width: 320px;
+    height: 320px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    margin: auto;
+    gap: 5px;
+
+    > * {
+        color: transparent;
+        border: 1px solid green;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        pointer-events: auto;
+
+        > svg {
+            width: 80%;
+            height: 80%;
+            transform: rotateX(90deg) rotateY(90deg);
+            transition: 1s all;
+        }
+    }
+
+    > .open-mode {
+        color: blue;
+        pointer-events: none;
+
+        > svg {
+            transform: rotateX(0deg) rotateY(0deg);
+            transition: 1s all;
+        }
+    }
+
+    > .finish-mode {
+        animation-name: finish;
+        animation-duration: 1s;
+        pointer-events: none;
+        color: green;
+        border: solid 1px transparent;
+
+        > svg {
+            transform: rotateX(0deg) rotateY(0deg);
+            transition: 1s all;
+        }
+    }
+
+    > *:hover {
+        background: lightcyan;
+    }
+}
+
+.fin-level {
+    transform: rotate(0deg);
+    animation-name: finlevel;
+    animation-duration: 1s;
+}
+
+@keyframes finlevel {
+    50% {
+        transform: rotate(60deg);
+    }
+
+    ;
+}
+
+@keyframes finish {
+    50% {
+        transform: rotate(80deg) scale(3)
+    }
+
+    ;
+}
